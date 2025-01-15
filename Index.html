@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEBAL MAKKAH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            background-color: #222;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: slideDown 1s ease-in-out;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: gold;
+        }
+        .container {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        #information {
+            background-color: #222;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            text-align: left;
+            max-width: 800px;
+            margin: 30px auto;
+            animation: fadeInLeft 1.5s ease-in-out;
+        }
+        #information h2, #information h3 {
+            color: gold;
+        }
+        #information p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        #information strong {
+            color: #ffc107;
+        }
+        #information .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #information .action-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: gold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        #information .action-buttons a:hover {
+            background-color: #ffb400;
+            transform: scale(1.05);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            animation: zoomIn 1s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .design-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .design-images {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #information .action-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#designs">Designs</a>
+        <a href="#services">Services</a>
+        <a href="#information">About</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h1>Welcome to Gebal Makkah</h1>
+        <img src="logo.png" alt="Gebal Makkah Logo" style="max-width: 200px;">
+    </div>
+
+    <div id="designs" class="container">
+        <h2>Our Designs</h2>
+        <p>Explore our unique and modern design solutions below:</p>
+        <div class="design-images">
+            <img src="2+ copy 3.jpg" alt="Design 1">
+            <img src="1+ copy 2.jpg" alt="Design 2">
+            <img src="3+ copy 2.jpg" alt="Design 3">
+            <img src="7+.jpg" alt="Design 4">
+            <img src="8+.jpg" alt="Design 5">
+            <img src="9+.jpg" alt="Design 6">
+            <img src="1.jpg" alt="Design 7">
+            <img src="2.jpg" alt="Design 8">
+            <img src="3.jpg" alt="Design 9">
+        </div>
+    </div>
+
+    <div id="services" class="container">
+        <h2>Our Services</h2>
+        <p>We offer a range of professional services:</p>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>✔ Building construction</li>
+            <li>✔ Finishing</li>
+            <li>✔ Real estate marketing</li>
+            <li>✔ Other professional services</li>
+        </ul>
+    </div>
+
+    <div id="information" class="container">
+        <h2>About Us</h2>
+        <h3>Gebal Makkah specializes in building construction, finishing, and real estate marketing</h3> 
+        <p>
+            <div><strong>Location:</strong> Egypt, Cairo, First Settlement, Abdel Basset Abdel Samad Street</div>
+            <br>
+            <div><strong>Phone:</strong> 
+                
+                <img src="phone-call.png" alt="phone" style="width: 25px; vertical-align: middle; margin-left: 10px;">
+                <span>01111147464 - 01023431882 - 0222472479</span>
+            </div>
+            <br>
+            <div>
+                <strong>WhatsApp:</strong>
+                <a href="https://wa.me/01111147464" style="color: gold; text-decoration: none; font-weight: bold;">
+                <img src="WhatsApp.png" alt="WhatsApp" style="width: 25px; vertical-align: middle; margin-left: 10px;">
+                 <span>01111147464</span> </a>
+                </div>
+            <br>
+            <div><strong>Facebook:</strong> 
+                <a href="https://www.facebook.com/abdo2342?mibextid=ZbWKwL" style="color: gold; text-decoration: none; font-weight: bold;">
+                <img src="facebook.png" alt="facebook" style="width: 25px; vertical-align: middle; margin-left: 10px;">
+                <span>Gebal Makkah</span> </a>
+                
+            </div>
+        </p>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="ar.html" style="text-decoration: none; background-color: gold; color: #222; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: all 0.3s ease;">Arabic</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Gebal Makkah All Rights Reserved
+    </footer>
+</body>
+</html>
